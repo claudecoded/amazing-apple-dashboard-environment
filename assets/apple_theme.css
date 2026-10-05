@@ -1,0 +1,37 @@
+/* Custom Apple Watch Dark Mode Dashboard Theme */
+
+.apple-card {
+    background-color: #1C1C1E !important; /* Apple Widget Background */
+    border-radius: 14px !important;       /* Apple smooth corner squircle */
+    padding: 24px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid #2C2C2E;
+    transition: transform 0.2s ease;
+}
+
+.apple-card:hover {
+    transform: scale(1.01);
+}
+
+/* Specific Apple Ring Color Accents */
+.ring-move { border-left: 5px solid #FF2D55 !important; }     /* Active Calories */
+.ring-exercise { border-left: 5px solid #00E676 !important; } /* Workout Time */
+.ring-stand { border-left: 5px solid #007AFF !important; }    /* Stand Hours / Distance */
+
+/* Styling the Custom Dropdown selector to fit Apple UI */
+.Select-control {
+    background-color: #1C1C1E !important;
+    border: 1px solid #3A3A3C !important;
+    color: #FFFFFF !important;
+    border-radius: 8px !important;
+}
+
+.Select-menu-outer {
+    background-color: #1C1C1E !important;
+    border: 1px solid #3A3A3C !important;
+}
+
+.Select-value-label, .VirtualizedSelectOption {
+    color: #FFFFFF !important;
+    background-color: #1C1C1E !important;
+}
