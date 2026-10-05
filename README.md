@@ -10,6 +10,9 @@ An interactive web dashboard clone inspired by [dieterich-lab/AppleDashboard](ht
 * `Dockerfile` & `docker-compose.yml`: Containerized production and dev environment setup.
 * `.import/`: Folder destination where your `export.xml` file should be placed.
 
+https://github.com/user-attachments/assets/cbee1359-9ae1-4b9d-95a9-97b1fd7ce33a
+---
+
 ## 🚀 Getting Started
 
 ### Option 1: Running with Docker (Recommended)
