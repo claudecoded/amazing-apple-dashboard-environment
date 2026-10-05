@@ -1,6 +1,19 @@
 version: '3.8'
 
 services:
+  postgres_db:
+    image: postgres:15-alpine
+    container_name: apple_health_database
+    environment:
+      POSTGRES_DB: apple_health
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
   dashboard:
     build: .
     container_name: apple_sports_dashboard_clone
@@ -8,7 +21,14 @@ services:
       - "8050:8050"
     volumes:
       - .:/app
-      - ./.import:/app/.import
     environment:
-      - ENV=development
+      - DB_HOST=postgres_db
+      - DB_NAME=apple_health
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+    depends_on:
+      - postgres_db
     restart: unless-stopped
+
+volumes:
+  postgres_data:
