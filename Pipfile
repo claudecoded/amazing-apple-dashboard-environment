@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dash = "*"
+plotly = "*"
+pandas = "*"
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+
+[requires]
+python_version = "3.10"
