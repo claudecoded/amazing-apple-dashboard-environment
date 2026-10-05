@@ -1,4 +1,5 @@
-# Apple Sports & Activity Dashboard Clone
+# Apple Sports & Apple Apps/Services Dashboard Clone <img src="https://ibb.co" width="20" height="20" style="vertical-align: middle;"> <img src="https://ibb.co" width="20" height="20" style="vertical-align: middle;"> <img src="https://ibb.co" width="20" height="20" style="vertical-align: middle;">
+---
 
 An interactive web dashboard clone inspired by [dieterich-lab/AppleDashboard](https://github.com/dieterich-lab/AppleDashboard) to parse and visualize workout telemetry and physical sports data exported from the Apple Watch and Apple Health ecosystem.
 
