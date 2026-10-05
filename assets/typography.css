@@ -1,0 +1,21 @@
+/* Typography & System Fonts matching Apple Design Guidelines */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('https://amazonaws.com') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('https://amazonaws.com') format('woff2');
+    font-weight: 700;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000000 !important; /* True Black standard from Apple Watch */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
