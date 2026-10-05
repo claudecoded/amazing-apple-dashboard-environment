@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  dashboard:
+    build: .
+    container_name: apple_sports_dashboard_clone
+    ports:
+      - "8050:8050"
+    volumes:
+      - .:/app
+      - ./.import:/app/.import
+    environment:
+      - ENV=development
+    restart: unless-stopped
